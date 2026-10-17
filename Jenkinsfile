@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    IMAGE_NAME = 'pradipta211/simple-app''
+    IMAGE_NAME = 'pradipta211/simple-app'
     REGISTRY_CREDENTIALS = 'dockerhub-credentials'
   }
   stages {
