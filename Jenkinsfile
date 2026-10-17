@@ -37,7 +37,7 @@ pipeline {
                 ]) {
                     bat '''
                         @echo off
-                        echo %DOCKER_PASS% | docker login -u %DOCKER_USER% --password-stdin
+                        echo %DOCKER_PASS% | docker login -u pradipta211 --password-stdin
                         if errorlevel 1 exit /b 1
 
                         docker push %IMAGE_NAME%:%BUILD_NUMBER%
